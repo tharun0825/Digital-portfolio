@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <!-- Add your profile picture here -->
+            <img src="image.jpg" alt="Your Profile Picture" class="profile-picture">
+            <h1>Tharun R</h1>
+            <p>Student Bachelor of Computer Application </p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+           
+        </ul>
+    </nav>
+
+    <section class="about-section">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>I'm particularly <b> interested </b> in web programming and web designing and i done projects in css and html</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-content">
+            <h2>Education</h2>
+            <p>Thiruthangal nadar college- BSC (computer science) </p>
+            
+            
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <ul>
+                <li>python basics</li>
+                <li>java basics</li>
+                <li>html</li>
+                <li>css</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-content">
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="#">Html</a></li>
+                <li><a href="#">Css</a></li>
+                <!-- Add more project links here -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="resume">
+
+        <div class="section-content">
+            <center>
+            <h2>Resume</h2>
+            <p>Download My Portfolio</p>
+            <a href="resume.png" download class="resume-button"> Download Resume </a>
+        </center>
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Jhanavarshini sb</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling to section when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
